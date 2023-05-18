@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pomodoro Clock</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Rubik&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <progress id="progress-bar" value="0"></progress>
+
+    <div class="header">
+        <div class="header__title">
+            <h1>Pomodoro Clock</h1>
+        </div>
+        <div class="header__choose">
+            <div id="mode-buttons">
+                <button data-mode="work" class="btn mode-btn" id="work-btn">Work</button>
+                <button data-mode="shortBreak" class="btn mode-btn" id="short-break-btn">Short Break</button>
+                <button data-mode="longBreak" class="btn mode-btn" id="long-break-btn">Long Break</button>
+            </div>
+        </div>
+    </div>
+
+    <div class="timer">
+
+        <div class="timer__clock" id="Clock">
+            <span id="minutes">25</span>
+            <span class="separator">:</span>
+            <span id="seconds">00</span>
+        </div>
+        <div class="timer__btn">
+            <button data-action="start" id="start-btn">Start</button>
+            <button data-action="reset" id="reset-btn">Reset</button>
+        </div>
+
+    </div>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
